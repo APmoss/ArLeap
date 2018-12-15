@@ -7,10 +7,6 @@ public class DesktopController : MonoBehaviour {
 
 	private bool _mainScreen = true;
 
-	private void Start() {
-		Physics.gravity = new Vector3(0f, -0.5f, 0f);
-	}
-
 	private void OnGUI() {
 		if (_mainScreen) {
 			if (GUI.Button(new Rect(10, 10, 100, 100), "Start Server")) {
